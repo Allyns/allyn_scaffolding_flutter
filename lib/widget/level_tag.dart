@@ -6,7 +6,6 @@ import '../extensions/extensions.dart' show BuildContextExtension;
 
 const double _kCharacterSize = 16.0;
 
-/// by zhangxinxu(.com)，可免费商用，保留此注释即可
 class LevelTag extends StatelessWidget {
   const LevelTag({
     required int? level,

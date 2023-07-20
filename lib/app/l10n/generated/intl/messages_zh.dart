@@ -64,7 +64,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "add": MessageLookupByLibrary.simpleMessage("新增"),
         "addCollected": m0,
         "addShare": MessageLookupByLibrary.simpleMessage("新增分享"),
-        "appName": MessageLookupByLibrary.simpleMessage("玩安卓"),
+        "appName":
+            MessageLookupByLibrary.simpleMessage("allynScaffoldingFlutter"),
         "articleNotFound": MessageLookupByLibrary.simpleMessage("文章不存在"),
         "articleNotFoundMsg":
             MessageLookupByLibrary.simpleMessage("啊咧咧，文章找不到啦"),
