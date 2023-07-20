@@ -85,8 +85,8 @@ class _HomeScreenState extends State<HomeScreen> {
           valueListenable: _currentIndexNotifier,
           builder: (BuildContext context, int index, _) => BottomNavigationBar(
             type: BottomNavigationBarType.fixed,
-            showSelectedLabels: false,
-            showUnselectedLabels: false,
+            showSelectedLabels: true,
+            showUnselectedLabels: true,
             currentIndex: index,
             onTap: _pageController.jumpToPage,
             items: <BottomNavigationBarItem>[

@@ -97,6 +97,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "forward": MessageLookupByLibrary.simpleMessage("前进"),
         "fresh": MessageLookupByLibrary.simpleMessage("新"),
         "home": MessageLookupByLibrary.simpleMessage("首页"),
+        "homeFind": MessageLookupByLibrary.simpleMessage("发现"),
+        "homeMe": MessageLookupByLibrary.simpleMessage("我的"),
         "hoursAgo": m4,
         "keepSwipingLeftToDelete":
             MessageLookupByLibrary.simpleMessage("继续左滑以删除"),
@@ -175,7 +177,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "square": MessageLookupByLibrary.simpleMessage("广场"),
         "success": MessageLookupByLibrary.simpleMessage("成功"),
         "tapToRetry": MessageLookupByLibrary.simpleMessage("轻触重试"),
-        "textAdd": MessageLookupByLibrary.simpleMessage("测试新增"),
         "themeMode": m10,
         "theyArticles": MessageLookupByLibrary.simpleMessage("Ta的文章"),
         "theyShare": MessageLookupByLibrary.simpleMessage("Ta的分享"),

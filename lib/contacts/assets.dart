@@ -25,4 +25,15 @@ class Assets {
 
   static const String ASSETS_IMAGES_UNKNOWN_PATH_PNG =
       'assets/images/unknown_path.png';
+
+  static const String ASSETS_IMAGES_HOME_FIND_TRUE =
+      'assets/images/home_find01.png';
+
+  static const String ASSETS_IMAGES_HOME_FIND_FALSE =
+      'assets/images/home_find02.png';
+
+  static const String ASSETS_IMAGES_HOME_ME_TRUE = 'assets/images/home_me.png';
+
+  static const String ASSETS_IMAGES_HOME_ME_FALSE =
+      'assets/images/home_me02.png';
 }

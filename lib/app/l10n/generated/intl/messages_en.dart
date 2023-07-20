@@ -106,6 +106,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "forward": MessageLookupByLibrary.simpleMessage("Forward"),
         "fresh": MessageLookupByLibrary.simpleMessage("New"),
         "home": MessageLookupByLibrary.simpleMessage("Home"),
+        "homeFind": MessageLookupByLibrary.simpleMessage("find"),
+        "homeMe": MessageLookupByLibrary.simpleMessage("me"),
         "hoursAgo": m4,
         "keepSwipingLeftToDelete":
             MessageLookupByLibrary.simpleMessage("Keep swiping\nto delete"),
@@ -201,7 +203,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "square": MessageLookupByLibrary.simpleMessage("Square"),
         "success": MessageLookupByLibrary.simpleMessage("Success"),
         "tapToRetry": MessageLookupByLibrary.simpleMessage("Tap to retry"),
-        "textAdd": MessageLookupByLibrary.simpleMessage("textAdd"),
         "themeMode": m10,
         "theyArticles": MessageLookupByLibrary.simpleMessage("They Articles"),
         "theyShare": MessageLookupByLibrary.simpleMessage("They Share"),

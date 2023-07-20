@@ -1277,11 +1277,21 @@ class S {
     );
   }
 
-  /// `textAdd`
-  String get textAdd {
+  /// `find`
+  String get homeFind {
     return Intl.message(
-      'textAdd',
-      name: 'textAdd',
+      'find',
+      name: 'homeFind',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `me`
+  String get homeMe {
+    return Intl.message(
+      'me',
+      name: 'homeMe',
       desc: '',
       args: [],
     );
