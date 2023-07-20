@@ -1,0 +1,278 @@
+{
+    "@@locale": "en",
+
+    "appName": "Wan Android",
+
+    "ok": "OK",
+    "cancel": "Cancel",
+
+    "add": "Add",
+    "delete": "Delete",
+    "edit": "Edit",
+    "save": "Save",
+
+    "tips": "Tips",
+    "warning": "Warning",
+
+    "back": "Back",
+    "forward": "Forward",
+
+    "loading": "Loading",
+    "refresh": "Refresh",
+    "retry": "Retry",
+
+    "empty": "Empty",
+    "emptyMsg": "There's nothing here.",
+
+    "loadFailed": "Load Failed",
+
+    "unknown": "Unknown",
+    "unknownError": "Unknown Error",
+    "unknownErrorMsg": "An error has occurred, but don't worry,\nit's not because of you.",
+
+    "unknownPath": "Unknown Path",
+    "unknownPathMsg": "Wow, how did you get here?",
+    "backHome": "Back Home",
+
+    "networkException": "Network Exception",
+    "networkExceptionMsg": "Please check your current internet connection.",
+
+    "loadingMore": "Loading more",
+    "noMore": "No more",
+    "loadMoreFailed": "Load failed, tap to retry",
+
+    "keepSwipingLeftToDelete": "Keep swiping\nto delete",
+    "releaseToDeleteSwipeRightToCancel": "Release to delete\nSwipe right to cancel",
+
+    "success": "Success",
+    "failed": "Failed",
+    "tapToRetry": "Tap to retry",
+
+    "useDataTrafficTips": "Currently using data traffic",
+
+    "home": "Home",
+
+    "top": "Top",
+    "fresh": "New",
+    "share": "Share",
+    "original": "Original",
+
+    "yearsAgo": "{many, plural, one{1 year} other{{many} years}} ago",
+    "@yearsAgo": {
+        "placeholders": {
+            "many": {
+                "type": "int",
+                "example": "1",
+                "description": "years ago"
+            }
+        }
+    },
+    "monthsAgo": "{many, plural, one{1 month} other{{many} months}} ago",
+    "@monthsAgo": {
+        "placeholders": {
+            "many": {
+                "type": "int",
+                "example": "1",
+                "description": "months ago"
+            }
+        }
+    },
+    "daysAgo": "{many, plural, one{1 day} other{{many} days}} ago",
+    "@daysAgo": {
+        "placeholders": {
+            "many": {
+                "type": "int",
+                "example": "1",
+                "description": "days ago"
+            }
+        }
+    },
+    "hoursAgo": "{many, plural, one{1 hour} other{{many} hours}} ago",
+    "@hoursAgo": {
+        "placeholders": {
+            "many": {
+                "type": "int",
+                "example": "1",
+                "description": "hours ago"
+            }
+        }
+    },
+    "minutesAgo": "{many, plural, zero{Just now} one{1 minute ago} other{{many} minutes ago}}",
+    "@minutesAgo": {
+        "placeholders": {
+            "many": {
+                "type": "int",
+                "example": "1",
+                "description": "minutes ago"
+            }
+        }
+    },
+
+    "square": "Square",
+
+    "question": "Q&A",
+
+    "project": "Project",
+    "projectType": "Project Type",
+
+    "searchForSomething": "Search for something",
+    "search": "Search",
+    "searchHistory": "Search History",
+    "popularKeyword": "Popular Keyword",
+    "keywordEmptyTips": "Please enter keywords",
+
+    "pointsRank": "Points Rank",
+
+    "myPoints": "My Points",
+    "totalPoints": "Total Points",
+
+    "myCollections": "My Collections",
+    "collectionType": "{type, select, article{Article} website{Website}}",
+    "@collectionType": {
+        "placeholders": {
+            "type": {
+                "type": "String",
+                "example": "article",
+                "description": "CollectionType(Enum).xx.name"
+            }
+        }
+    },
+    "removeArticleTips": "Are you sure to remove this article?",
+    "removeWebsiteTips": "Are you sure to remove this website?",
+    "addCollected": "Add Collected {name}",
+    "@addCollected": {
+        "placeholders": {
+            "name": {
+                "type": "String",
+                "example": "Article",
+                "description": "collectionType translate value"
+            }
+        }
+    },
+    "editCollected": "Edit Collected {name}",
+    "@editCollected": {
+        "placeholders": {
+            "name": {
+                "type": "String",
+                "example": "Article",
+                "description": "collectionType translate value"
+            }
+        }
+    },
+
+    "myShare": "My Share",
+    "removeShareTips": "Are you sure to remove this share?",
+    "addShare": "Add Share",
+
+    "title": "Title",
+    "titleEmptyTips": "Please enter title",
+    "author": "Author",
+    "authorEmptyTips": "Please enter author",
+    "link": "Link",
+    "linkEmptyTips": "Please enter link",
+    "linkFormatTips": "Please check the link format",
+
+    "about": "About",
+
+    "settings": "Settings",
+
+    "clearCache": "Clear Cache",
+    "otherCache": "Other",
+    "otherCacheTips": "include search records, home page banner, etc",
+    "responseDataCache": "Response Data",
+    "responseDataCacheTips": "cache time-sensitive data to improve the experience",
+    "preferencesCache": "Preferences",
+    "preferencesCacheTips": "include the currently set theme, language, etc",
+    "selectAll": "Select All",
+    "deselectAll": "Deselect All",
+    "occupies": "Occupies {size}",
+    "@occupies": {
+        "placeholders": {
+            "size": {
+                "type": "String",
+                "example": "100 MB",
+                "description": "cache space"
+            }
+        }
+    },
+    "clear": "Clear",
+    "clearCacheWarning": "Are you sure you want to clear the cache?",
+
+    "themeMode": "{mode, select, light{Light Mode} dark{Dark Mode} other{Auto}}",
+    "@themeMode": {
+        "placeholders": {
+            "mode": {
+                "type": "String",
+                "example": "light",
+                "description": "ThemeMode(Enum).xx.name"
+            }
+        }
+    },
+    "currentThemeModeTips": "The current system color scheme is ",
+    "resetThemeModeTips": "Do you want to switch the theme mode to follow the system?",
+
+    "languages": "Language",
+    "locale": "{locale, select, en{English} zh{Chinese} other{Auto}}",
+    "@locale": {
+        "placeholders": {
+            "locale": {
+                "type": "String",
+                "example": "en",
+                "description": "Locale(class).toString()"
+            }
+        }
+    },
+
+    "login": "Login",
+    "lastLogin": "Last login",
+    "noLogin": "No login",
+    "logout": "Logout",
+    "register": "Register",
+    "username": "Username",
+    "password": "Password",
+    "repassword": "RePassword",
+    "rememberPassword": "Remember Password",
+    "usernameEmptyTips": "Please enter username",
+    "passwordEmptyTips": "Please enter password",
+    "repasswordEmptyTips": "Please enter repassword",
+    "passwordAndRepasswordNotTheSameTips": "Password is not the same as repassword",
+    "loginSuccess": "Login Successful",
+    "loginFailed": "Login Failed",
+    "registerSuccess": "Register Successful",
+    "registerFailed": "Register Failed",
+    "loginInfoInvalidTips": "Login information is invalid, error code {errorCode}",
+    "@loginInfoInvalidTips": {
+        "placeholders": {
+            "errorCode": {
+                "type": "int",
+                "example": "-1",
+                "description": "Error Code"
+            }
+        }
+    },
+
+    "copyLink": "Copy Link",
+    "copiedToClipboard": "Copied to clipboard",
+    "browser": "Browser",
+    "unableToOpenLink": "Unable to open link: {link}",
+    "@unableToOpenLink": {
+        "placeholders": {
+            "link": {
+                "type": "String",
+                "example": "https://wanandroid.com",
+                "description": "Link"
+            }
+        }
+    },
+    "collected": "Collected",
+    "collect": "Collect",
+    "recommend": "Recommend",
+    "desktop": "Desktop",
+
+    "articleNotFound": "Article not found",
+    "articleNotFoundMsg": "Can't find the article",
+
+    "theyArticles": "They Articles",
+    "theyShare": "They Share",
+    "textAdd": "textAdd"
+}
