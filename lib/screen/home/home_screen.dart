@@ -57,7 +57,7 @@ class _HomeScreenState extends State<HomeScreen> {
   final List<Widget> _pages = const <Widget>[
     _Home(),
     HomePlazaPage(),
-    HomeFindPage(),
+    // HomeFindPage(),
     HomeMePage(),
   ];
 
@@ -111,26 +111,26 @@ class _HomeScreenState extends State<HomeScreen> {
                 activeIcon: const Icon(IconFontIcons.seedlingFill),
                 tooltip: S.of(context).square,
               ),
-              BottomNavigationBarItem(
-                label: S.of(context).homeFind,
-                icon: SizedBox(
-                  width: kStyleUint * 6,
-                  height: kStyleUint * 6,
-                  child: SvgPicture.asset(Assets.ASSETS_IMAGES_HOME_FIND_02,
-                      theme: SvgTheme(
-                          currentColor: context.theme.bottomNavigationBarTheme
-                              .selectedItemColor!)),
-                ),
-                activeIcon: SizedBox(
-                  width: kStyleUint * 6,
-                  height: kStyleUint * 6,
-                  child: SvgPicture.asset(Assets.ASSETS_IMAGES_HOME_FIND_01,
-                      theme: SvgTheme(
-                          currentColor: context.theme.bottomNavigationBarTheme
-                              .selectedItemColor!)),
-                ),
-                tooltip: S.of(context).homeFind,
-              ),
+              // BottomNavigationBarItem(
+              //   label: S.of(context).homeFind,
+              //   icon: SizedBox(
+              //     width: kStyleUint * 6,
+              //     height: kStyleUint * 6,
+              //     child: SvgPicture.asset(Assets.ASSETS_IMAGES_HOME_FIND_02,
+              //         theme: SvgTheme(
+              //             currentColor: context.theme.bottomNavigationBarTheme
+              //                 .selectedItemColor!)),
+              //   ),
+              //   activeIcon: SizedBox(
+              //     width: kStyleUint * 6,
+              //     height: kStyleUint * 6,
+              //     child: SvgPicture.asset(Assets.ASSETS_IMAGES_HOME_FIND_01,
+              //         theme: SvgTheme(
+              //             currentColor: context.theme.bottomNavigationBarTheme
+              //                 .selectedItemColor!)),
+              //   ),
+              //   tooltip: S.of(context).homeFind,
+              // ),
               BottomNavigationBarItem(
                 label: S.of(context).homeMe,
                 icon: SizedBox(
@@ -160,7 +160,7 @@ class _HomeScreenState extends State<HomeScreen> {
 enum HomePath {
   home,
   square,
-  qa,
+  // qa,
   project,
 }
 

@@ -52,7 +52,6 @@ extension $HomeRouteExtension on HomeRoute {
 const _$HomePathEnumMap = {
   HomePath.home: 'home',
   HomePath.square: 'square',
-  HomePath.qa: 'qa',
   HomePath.project: 'project',
 };
 
