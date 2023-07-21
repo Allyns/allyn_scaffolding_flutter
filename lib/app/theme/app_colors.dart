@@ -7,6 +7,7 @@ class AppColors {
   static final Color whiteDark = white.withOpacity(0.9);
 
   static const Color black = Color(0xff000000);
+  static const Color gay = Color(0xffC2C7CD);
   static const Color blackDark = Color(0xff000000);
 
   static final Color maskBackground = gray.shade10.withOpacity(0.6);

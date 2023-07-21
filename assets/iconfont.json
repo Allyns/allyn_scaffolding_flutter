@@ -1,0 +1,37 @@
+{
+  "id": "4176925",
+  "name": "allyn",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "7366875",
+      "name": "我的",
+      "font_class": "wode",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "11372762",
+      "name": "发现",
+      "font_class": "faxian",
+      "unicode": "e8c4",
+      "unicode_decimal": 59588
+    },
+    {
+      "icon_id": "12316161",
+      "name": "我的",
+      "font_class": "wode1",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "11372661",
+      "name": "发现",
+      "font_class": "faxian1",
+      "unicode": "e8af",
+      "unicode_decimal": 59567
+    }
+  ]
+}

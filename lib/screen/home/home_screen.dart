@@ -1,9 +1,11 @@
 import 'dart:async';
 
+import 'package:allyn_scaffolding_flutter/contacts/assets.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:nil/nil.dart' show nil;
 
 import '../../../widget/view_state_widget.dart';
@@ -30,9 +32,13 @@ import '../drawer/home_drawer.dart';
 import 'provider/home_provider.dart';
 
 part 'home_search_delegate.dart';
+
 part 'project.dart';
+
 part 'project_type_bottom_sheet.dart';
+
 part 'qa.dart';
+
 part 'square.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -103,16 +109,44 @@ class _HomeScreenState extends State<HomeScreen> {
                 tooltip: S.of(context).square,
               ),
               BottomNavigationBarItem(
-                label: S.of(context).question,
-                icon: const Icon(IconFontIcons.questionnaireLine),
-                activeIcon: const Icon(IconFontIcons.questionnaireFill),
-                tooltip: S.of(context).question,
+                label: S.of(context).homeFind,
+                icon: SizedBox(
+                  width: kStyleUint * 6,
+                  height: kStyleUint * 6,
+                  child: SvgPicture.asset(
+                    Assets.ASSETS_IMAGES_HOME_FIND_02,
+                    theme: const SvgTheme(currentColor: AppColors.black),
+                  ),
+                ),
+                activeIcon: SizedBox(
+                  width: kStyleUint * 6,
+                  height: kStyleUint * 6,
+                  child: SvgPicture.asset(
+                    Assets.ASSETS_IMAGES_HOME_FIND_01,
+                    theme: const SvgTheme(currentColor: AppColors.gay),
+                  ),
+                ),
+                tooltip: S.of(context).homeFind,
               ),
               BottomNavigationBarItem(
-                label: S.of(context).project,
-                icon: const Icon(IconFontIcons.androidLine),
-                activeIcon: const Icon(IconFontIcons.androidFill),
-                tooltip: S.of(context).project,
+                label: S.of(context).homeMe,
+                icon: SizedBox(
+                  width: kStyleUint * 6,
+                  height: kStyleUint * 6,
+                  child: SvgPicture.asset(
+                    Assets.ASSETS_IMAGES_HOME_ME_02,
+                    theme: const SvgTheme(currentColor: AppColors.black),
+                  ),
+                ),
+                activeIcon: SizedBox(
+                  width: kStyleUint * 6,
+                  height: kStyleUint * 6,
+                  child: SvgPicture.asset(
+                    Assets.ASSETS_IMAGES_HOME_ME_01,
+                    theme: const SvgTheme(currentColor: AppColors.gay),
+                  ),
+                ),
+                tooltip: S.of(context).homeMe,
               ),
             ],
           ),

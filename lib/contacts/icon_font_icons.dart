@@ -53,4 +53,5 @@ class IconFontIcons {
   static const IconData clipboardLine =
       IconData(0xeb91, fontFamily: fontFamily);
   static const IconData moreFill = IconData(0xef78, fontFamily: fontFamily);
+  static const IconData testhome = IconData(0xe611, fontFamily: fontFamily);
 }
