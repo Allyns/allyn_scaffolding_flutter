@@ -128,6 +128,7 @@
 
     "myCollections": "My Collections",
     "collectionType": "{type, select, article{Article} website{Website}}",
+    "homePlazaType": "{type, select, plaza{Hot} answers{Answers} projects{Projects}}",
     "@collectionType": {
         "placeholders": {
             "type": {

@@ -157,6 +157,8 @@ class _MyAppState extends ConsumerState<MyApp> with WidgetsBindingObserver {
     final Locale? locale = ref.watch(appLanguageProvider)?.locale;
 
     return MaterialApp.router(
+      //隐藏右上角debug图标
+      debugShowCheckedModeBanner: false,
       onGenerateTitle: (BuildContext context) => S.of(context).appName,
       routerConfig: goRouter,
       builder: FlutterSmartDialog.init(

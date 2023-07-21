@@ -29,6 +29,9 @@ import '../../widget/indent_divider.dart';
 import '../../widget/level_tag.dart';
 import '../authorized/provider/authorized_provider.dart';
 import '../drawer/home_drawer.dart';
+import 'home_find.dart';
+import 'home_me.dart';
+import 'home_plaza.dart';
 import 'provider/home_provider.dart';
 
 part 'home_search_delegate.dart';
@@ -53,9 +56,9 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   final List<Widget> _pages = const <Widget>[
     _Home(),
-    _Square(),
-    _QA(),
-    _Project(),
+    HomePlazaPage(),
+    HomeFindPage(),
+    HomeMePage(),
   ];
 
   late final ValueNotifier<int> _currentIndexNotifier =

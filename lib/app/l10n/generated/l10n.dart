@@ -637,6 +637,21 @@ class S {
     );
   }
 
+  /// `{type, select, plaza{Hot} answers{Answers} projects{Projects}}`
+  String homePlazaType(Object type) {
+    return Intl.select(
+      type,
+      {
+        'plaza': 'Hot',
+        'answers': 'Answers',
+        'projects': 'Projects',
+      },
+      name: 'homePlazaType',
+      desc: '',
+      args: [type],
+    );
+  }
+
   /// `Are you sure to remove this article?`
   String get removeArticleTips {
     return Intl.message(

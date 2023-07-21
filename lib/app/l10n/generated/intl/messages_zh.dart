@@ -31,32 +31,38 @@ class MessageLookup extends MessageLookupByLibrary {
 
   static String m3(name) => "编辑收集的${name}";
 
-  static String m4(many) => "${Intl.plural(many, other: '${many}小时前')}";
+  static String m4(type) => "${Intl.select(type, {
+            'plaza': '热门',
+            'answers': '问答',
+            'projects': '项目',
+          })}";
 
-  static String m5(locale) => "${Intl.select(locale, {
+  static String m5(many) => "${Intl.plural(many, other: '${many}小时前')}";
+
+  static String m6(locale) => "${Intl.select(locale, {
             'en': '英文',
             'zh': '中文',
             'other': '跟随系统',
           })}";
 
-  static String m6(errorCode) => "登录信息已过期, 错误码 ${errorCode}";
+  static String m7(errorCode) => "登录信息已过期, 错误码 ${errorCode}";
 
-  static String m7(many) =>
+  static String m8(many) =>
       "${Intl.plural(many, zero: '刚刚', other: '${many}分钟前')}";
 
-  static String m8(many) => "${Intl.plural(many, other: '${many}个月前')}";
+  static String m9(many) => "${Intl.plural(many, other: '${many}个月前')}";
 
-  static String m9(size) => "占空间约 ${size}";
+  static String m10(size) => "占空间约 ${size}";
 
-  static String m10(mode) => "${Intl.select(mode, {
+  static String m11(mode) => "${Intl.select(mode, {
             'light': '浅色模式',
             'dark': '深色模式',
             'other': '跟随系统',
           })}";
 
-  static String m11(link) => "无法打开链接: ${link}";
+  static String m12(link) => "无法打开链接: ${link}";
 
-  static String m12(many) => "${Intl.plural(many, other: '${many}年前')}";
+  static String m13(many) => "${Intl.plural(many, other: '${many}年前')}";
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
@@ -99,7 +105,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "home": MessageLookupByLibrary.simpleMessage("首页"),
         "homeFind": MessageLookupByLibrary.simpleMessage("发现"),
         "homeMe": MessageLookupByLibrary.simpleMessage("我的"),
-        "hoursAgo": m4,
+        "homePlazaType": m4,
+        "hoursAgo": m5,
         "keepSwipingLeftToDelete":
             MessageLookupByLibrary.simpleMessage("继续左滑以删除"),
         "keywordEmptyTips":
@@ -113,14 +120,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "loadMoreFailed": MessageLookupByLibrary.simpleMessage("加载失败了，轻触重试"),
         "loading": MessageLookupByLibrary.simpleMessage("请稍候"),
         "loadingMore": MessageLookupByLibrary.simpleMessage("正在加载更多"),
-        "locale": m5,
+        "locale": m6,
         "login": MessageLookupByLibrary.simpleMessage("登录"),
         "loginFailed": MessageLookupByLibrary.simpleMessage("登录失败"),
-        "loginInfoInvalidTips": m6,
+        "loginInfoInvalidTips": m7,
         "loginSuccess": MessageLookupByLibrary.simpleMessage("登录成功"),
         "logout": MessageLookupByLibrary.simpleMessage("退出登录"),
-        "minutesAgo": m7,
-        "monthsAgo": m8,
+        "minutesAgo": m8,
+        "monthsAgo": m9,
         "myCollections": MessageLookupByLibrary.simpleMessage("我的收藏"),
         "myPoints": MessageLookupByLibrary.simpleMessage("我的积分"),
         "myShare": MessageLookupByLibrary.simpleMessage("我的分享"),
@@ -129,7 +136,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("请检查您当前的网络连接"),
         "noLogin": MessageLookupByLibrary.simpleMessage("未登录"),
         "noMore": MessageLookupByLibrary.simpleMessage("没有更多了"),
-        "occupies": m9,
+        "occupies": m10,
         "ok": MessageLookupByLibrary.simpleMessage("好"),
         "original": MessageLookupByLibrary.simpleMessage("原创"),
         "otherCache": MessageLookupByLibrary.simpleMessage("其他"),
@@ -177,7 +184,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "square": MessageLookupByLibrary.simpleMessage("广场"),
         "success": MessageLookupByLibrary.simpleMessage("成功"),
         "tapToRetry": MessageLookupByLibrary.simpleMessage("轻触重试"),
-        "themeMode": m10,
+        "themeMode": m11,
         "theyArticles": MessageLookupByLibrary.simpleMessage("Ta的文章"),
         "theyShare": MessageLookupByLibrary.simpleMessage("Ta的分享"),
         "tips": MessageLookupByLibrary.simpleMessage("提示"),
@@ -185,7 +192,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "titleEmptyTips": MessageLookupByLibrary.simpleMessage("请输入标题"),
         "top": MessageLookupByLibrary.simpleMessage("置顶"),
         "totalPoints": MessageLookupByLibrary.simpleMessage("总积分"),
-        "unableToOpenLink": m11,
+        "unableToOpenLink": m12,
         "unknown": MessageLookupByLibrary.simpleMessage("未知"),
         "unknownError": MessageLookupByLibrary.simpleMessage("未知错误"),
         "unknownErrorMsg":
@@ -197,6 +204,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "username": MessageLookupByLibrary.simpleMessage("用户名"),
         "usernameEmptyTips": MessageLookupByLibrary.simpleMessage("请输入用户名"),
         "warning": MessageLookupByLibrary.simpleMessage("警告"),
-        "yearsAgo": m12
+        "yearsAgo": m13
       };
 }

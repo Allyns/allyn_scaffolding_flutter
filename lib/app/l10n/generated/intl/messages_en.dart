@@ -32,35 +32,41 @@ class MessageLookup extends MessageLookupByLibrary {
 
   static String m3(name) => "Edit Collected ${name}";
 
-  static String m4(many) =>
+  static String m4(type) => "${Intl.select(type, {
+            'plaza': 'Hot',
+            'answers': 'Answers',
+            'projects': 'Projects',
+          })}";
+
+  static String m5(many) =>
       "${Intl.plural(many, one: '1 hour', other: '${many} hours')} ago";
 
-  static String m5(locale) => "${Intl.select(locale, {
+  static String m6(locale) => "${Intl.select(locale, {
             'en': 'English',
             'zh': 'Chinese',
             'other': 'Auto',
           })}";
 
-  static String m6(errorCode) =>
+  static String m7(errorCode) =>
       "Login information is invalid, error code ${errorCode}";
 
-  static String m7(many) =>
+  static String m8(many) =>
       "${Intl.plural(many, zero: 'Just now', one: '1 minute ago', other: '${many} minutes ago')}";
 
-  static String m8(many) =>
+  static String m9(many) =>
       "${Intl.plural(many, one: '1 month', other: '${many} months')} ago";
 
-  static String m9(size) => "Occupies ${size}";
+  static String m10(size) => "Occupies ${size}";
 
-  static String m10(mode) => "${Intl.select(mode, {
+  static String m11(mode) => "${Intl.select(mode, {
             'light': 'Light Mode',
             'dark': 'Dark Mode',
             'other': 'Auto',
           })}";
 
-  static String m11(link) => "Unable to open link: ${link}";
+  static String m12(link) => "Unable to open link: ${link}";
 
-  static String m12(many) =>
+  static String m13(many) =>
       "${Intl.plural(many, one: '1 year', other: '${many} years')} ago";
 
   final messages = _notInlinedMessages(_notInlinedMessages);
@@ -108,7 +114,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "home": MessageLookupByLibrary.simpleMessage("Home"),
         "homeFind": MessageLookupByLibrary.simpleMessage("find"),
         "homeMe": MessageLookupByLibrary.simpleMessage("me"),
-        "hoursAgo": m4,
+        "homePlazaType": m4,
+        "hoursAgo": m5,
         "keepSwipingLeftToDelete":
             MessageLookupByLibrary.simpleMessage("Keep swiping\nto delete"),
         "keywordEmptyTips":
@@ -125,15 +132,15 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Load failed, tap to retry"),
         "loading": MessageLookupByLibrary.simpleMessage("Loading"),
         "loadingMore": MessageLookupByLibrary.simpleMessage("Loading more"),
-        "locale": m5,
+        "locale": m6,
         "login": MessageLookupByLibrary.simpleMessage("Login"),
         "loginFailed": MessageLookupByLibrary.simpleMessage("Login Failed"),
-        "loginInfoInvalidTips": m6,
+        "loginInfoInvalidTips": m7,
         "loginSuccess":
             MessageLookupByLibrary.simpleMessage("Login Successful"),
         "logout": MessageLookupByLibrary.simpleMessage("Logout"),
-        "minutesAgo": m7,
-        "monthsAgo": m8,
+        "minutesAgo": m8,
+        "monthsAgo": m9,
         "myCollections": MessageLookupByLibrary.simpleMessage("My Collections"),
         "myPoints": MessageLookupByLibrary.simpleMessage("My Points"),
         "myShare": MessageLookupByLibrary.simpleMessage("My Share"),
@@ -143,7 +150,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Please check your current internet connection."),
         "noLogin": MessageLookupByLibrary.simpleMessage("No login"),
         "noMore": MessageLookupByLibrary.simpleMessage("No more"),
-        "occupies": m9,
+        "occupies": m10,
         "ok": MessageLookupByLibrary.simpleMessage("OK"),
         "original": MessageLookupByLibrary.simpleMessage("Original"),
         "otherCache": MessageLookupByLibrary.simpleMessage("Other"),
@@ -203,7 +210,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "square": MessageLookupByLibrary.simpleMessage("Square"),
         "success": MessageLookupByLibrary.simpleMessage("Success"),
         "tapToRetry": MessageLookupByLibrary.simpleMessage("Tap to retry"),
-        "themeMode": m10,
+        "themeMode": m11,
         "theyArticles": MessageLookupByLibrary.simpleMessage("They Articles"),
         "theyShare": MessageLookupByLibrary.simpleMessage("They Share"),
         "tips": MessageLookupByLibrary.simpleMessage("Tips"),
@@ -212,7 +219,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Please enter title"),
         "top": MessageLookupByLibrary.simpleMessage("Top"),
         "totalPoints": MessageLookupByLibrary.simpleMessage("Total Points"),
-        "unableToOpenLink": m11,
+        "unableToOpenLink": m12,
         "unknown": MessageLookupByLibrary.simpleMessage("Unknown"),
         "unknownError": MessageLookupByLibrary.simpleMessage("Unknown Error"),
         "unknownErrorMsg": MessageLookupByLibrary.simpleMessage(
@@ -226,6 +233,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "usernameEmptyTips":
             MessageLookupByLibrary.simpleMessage("Please enter username"),
         "warning": MessageLookupByLibrary.simpleMessage("Warning"),
-        "yearsAgo": m12
+        "yearsAgo": m13
       };
 }

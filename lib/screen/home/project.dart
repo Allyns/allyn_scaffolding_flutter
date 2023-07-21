@@ -1,17 +1,17 @@
 part of 'home_screen.dart';
 
-class _Project extends ConsumerStatefulWidget {
-  const _Project();
+class Project extends ConsumerStatefulWidget {
+  const Project({super.key});
 
   @override
-  ConsumerState<_Project> createState() => _ProjectState();
+  ConsumerState<Project> createState() => _ProjectState();
 }
 
-class _ProjectState extends ConsumerState<_Project>
+class _ProjectState extends ConsumerState<Project>
     with
         AutomaticKeepAliveClientMixin,
         RefreshListViewStateMixin<ProjectArticleProvider, ArticleModel,
-            _Project> {
+            Project> {
   @override
   bool get wantKeepAlive => true;
 
@@ -37,14 +37,8 @@ class _ProjectState extends ConsumerState<_Project>
   @override
   Widget build(BuildContext context) {
     super.build(context);
-
     return Column(
       children: <Widget>[
-        AppBar(
-          leading: nil,
-          leadingWidth: 0.0,
-          title: Text(S.of(context).project),
-        ),
         Expanded(
           child: NotificationListener<ScrollNotification>(
             onNotification: onScrollNotification,
