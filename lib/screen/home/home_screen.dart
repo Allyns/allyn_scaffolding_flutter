@@ -77,7 +77,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) => Scaffold(
-        drawer: const HomeDrawer(),
+        // drawer: const HomeDrawer(),
         drawerScrimColor: context.theme.colorScheme.scrim,
         body: PageView.builder(
           controller: _pageController,
@@ -318,16 +318,16 @@ class _HomeAppBarDelegate extends SliverPersistentHeaderDelegate {
                     ),
                   );
 
-                  if (userInfo == null) {
-                    return Center(
-                      child: Text(
-                        S.of(context).appName,
-                        style: context.theme.textTheme.titleLarge,
-                      ),
-                    );
-                  }
+                  // if (userInfo == null) {
+                  return Center(
+                    child: Text(
+                      S.of(context).appName,
+                      style: context.theme.textTheme.titleLarge,
+                    ),
+                  );
+                  // }
 
-                  return _HomeAppBarUserInfo(userInfo: userInfo);
+                  // return _HomeAppBarUserInfo(userInfo: userInfo);
                 },
               ),
             ),
