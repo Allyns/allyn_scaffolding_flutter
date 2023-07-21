@@ -29,6 +29,13 @@ class SettingsScreen extends StatelessWidget {
                         unawaited(const StorageRoute().push(context));
                       },
                     ),
+                    ListTile(
+                      leading: const Icon(IconFontIcons.informationLine),
+                      title: Text(S.of(context).about),
+                      onTap: () {
+                        unawaited(const AboutRoute().push(context));
+                      },
+                    ),
                   ],
                 ),
               ),

@@ -116,18 +116,18 @@ class _HomeScreenState extends State<HomeScreen> {
                 icon: SizedBox(
                   width: kStyleUint * 6,
                   height: kStyleUint * 6,
-                  child: SvgPicture.asset(
-                    Assets.ASSETS_IMAGES_HOME_FIND_02,
-                    theme: const SvgTheme(currentColor: AppColors.black),
-                  ),
+                  child: SvgPicture.asset(Assets.ASSETS_IMAGES_HOME_FIND_02,
+                      theme: SvgTheme(
+                          currentColor: context.theme.bottomNavigationBarTheme
+                              .selectedItemColor!)),
                 ),
                 activeIcon: SizedBox(
                   width: kStyleUint * 6,
                   height: kStyleUint * 6,
-                  child: SvgPicture.asset(
-                    Assets.ASSETS_IMAGES_HOME_FIND_01,
-                    theme: const SvgTheme(currentColor: AppColors.gay),
-                  ),
+                  child: SvgPicture.asset(Assets.ASSETS_IMAGES_HOME_FIND_01,
+                      theme: SvgTheme(
+                          currentColor: context.theme.bottomNavigationBarTheme
+                              .selectedItemColor!)),
                 ),
                 tooltip: S.of(context).homeFind,
               ),
@@ -136,18 +136,18 @@ class _HomeScreenState extends State<HomeScreen> {
                 icon: SizedBox(
                   width: kStyleUint * 6,
                   height: kStyleUint * 6,
-                  child: SvgPicture.asset(
-                    Assets.ASSETS_IMAGES_HOME_ME_02,
-                    theme: const SvgTheme(currentColor: AppColors.black),
-                  ),
+                  child: SvgPicture.asset(Assets.ASSETS_IMAGES_HOME_ME_02,
+                      theme: SvgTheme(
+                          currentColor: context.theme.bottomNavigationBarTheme
+                              .selectedItemColor!)),
                 ),
                 activeIcon: SizedBox(
                   width: kStyleUint * 6,
                   height: kStyleUint * 6,
-                  child: SvgPicture.asset(
-                    Assets.ASSETS_IMAGES_HOME_ME_01,
-                    theme: const SvgTheme(currentColor: AppColors.gay),
-                  ),
+                  child: SvgPicture.asset(Assets.ASSETS_IMAGES_HOME_ME_01,
+                      theme: SvgTheme(
+                          currentColor: context.theme.bottomNavigationBarTheme
+                              .selectedItemColor!)),
                 ),
                 tooltip: S.of(context).homeMe,
               ),

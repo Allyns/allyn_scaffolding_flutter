@@ -6,7 +6,9 @@ import 'package:flutter/services.dart' show SystemUiOverlayStyle;
 import '../../utils/screen_utils.dart';
 
 part 'app_colors.dart';
+
 part 'app_text_theme.dart';
+
 part 'gradient_colors.dart';
 
 const double _kRadiusValue = 14.0;
@@ -177,6 +179,9 @@ class AppTheme {
     indicatorColor: AppColors.primary,
     hintColor: AppColors.text4,
     textTheme: AppTextTheme.light,
+    cardTheme: const CardTheme(
+      color: AppColors.background1,
+    ),
     iconTheme: IconThemeData(
       color: AppColors.text1,
       size: defaultIconSize,
@@ -329,6 +334,9 @@ class AppTheme {
     indicatorColor: AppColors.primaryDark,
     hintColor: AppColors.text4Dark,
     textTheme: AppTextTheme.dark,
+    cardTheme: CardTheme(
+      color: AppColors.background1Dark,
+    ),
     iconTheme: IconThemeData(
       color: AppColors.text1Dark,
       size: defaultIconSize,
