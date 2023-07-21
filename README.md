@@ -1,17 +1,6 @@
 # allyn_scaffolding_flutter
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# allyn_scaffolding_flutter
+| ![](screenshots/2023-07-21 at 23.02.23.png) | ![](screenshots/search_result_screen.png) | ![](screenshots/article_screen.png) |
+| --- | --- | --- |
+| ![](screenshots/rank_screen.png) | ![](screenshots/my_points_screen.gif) | ![](screenshots/my_collections_screen.gif) |
+| ![](screenshots/storage_screen.png) |
