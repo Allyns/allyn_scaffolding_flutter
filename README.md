@@ -34,4 +34,5 @@ flutter pub run build_runner build
 | <img src="https://github.com/Allyns/allyn_scaffolding_flutter/blob/main/screenshots/2023-07-21 at 23.25.16.png" width="208" height="404">  |   <img src="https://github.com/Allyns/allyn_scaffolding_flutter/blob/main/screenshots/2023-07-21 at 23.25.30.png" width="208" height="404">  |  <img src="https://github.com/Allyns/allyn_scaffolding_flutter/blob/main/screenshots/WechatIMG2736.jpg" width="208" height="404">   |
 
 
-- [知识点笔记](https://juejin.cn/post/7250736169277866041)
+
+- [推荐文章](https://book.flutterchina.club/#%E7%AC%AC%E4%BA%8C%E7%89%88%E5%8F%98%E5%8C%96)
